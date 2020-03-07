@@ -14,8 +14,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.4",
-	"appid": "wxc818dbc364b50e2d",
-	"projectname": "%E6%A0%B9%E8%BD%A8%E8%BF%B9",
+	"appid": "你的_APPID",
+	"projectname": "你的_项目名称",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

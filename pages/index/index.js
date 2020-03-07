@@ -22,7 +22,7 @@ Page({
   },
   shouquan: function(e){
     wx.requestSubscribeMessage({
-      tmplIds: ['Lz-ayzlGz3hyyeekKKmi4gz2hPcxB34Qy1hyw0jzcjs'],
+      tmplIds: ['你的_订阅消息ID'],
       success(res) { }
     })
   },
@@ -36,7 +36,7 @@ Page({
       title: '正在绘制...'
     });
     wx.request({
-      url: 'https://www.guangtang.xyz/draw_genguiji', //接口地址
+      url: '你的_绘制函数的网络接口', //接口地址
       data: {
         tf_data: this.data.tf_data,
         openid: app.globalData.openid
@@ -84,7 +84,7 @@ Page({
         console.log(res.code)
         //发送请求
         wx.request({
-          url: 'https://www.guangtang.xyz/genguiji_get_openid', //接口地址
+          url: '你的_获取openid的服务器接口', //接口地址
           data: { code: res.code },
           header: {
             'content-type': 'application/json' //默认值

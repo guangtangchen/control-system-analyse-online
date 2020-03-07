@@ -43,7 +43,7 @@ style="width:33%; height:100px">
 <button bindtap="shouquan">授权</button>
 
 <view style="text-align:center;color:gray;font-size:30rpx">
-<text>\nCopyright © 2019 GT, All Rights Reserved \nguangtangchen@gmail.com
+<text>\nCopyright © 2019 GT, All Rights Reserved
 </text>
 </view>
 
