@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto" style="color:teal">{{motto}}, {{userInfo.nickName}}\n</text>
+    <text style="color:gray;font-size:30rpx">{{toast}}</text>
+  </view>
+</view>
+
+
+<view class="input_1">
+<text>\n\n\n\n\n\n\n</text>
+<input class="input" placeholder="请输入开环传递函数" placeholder-style="text-align:center" bindblur="get_value" 
+name='album_name'></input>
+</view>
+<view style="text-align:center">
+<text style="color:gray;font-size:32rpx">系数间为英文空格，分子分母用英文“,”隔开,如:\n3 5, 2 0 1 9</text>
+<text>\n</text>
+<text>\n</text>
+</view>
+<button bindtap="submit_album" type="primary">绘制</button>
+<text>\n</text>
+<button  open-type="share">分享小程序</button>
+<view style="text-align:center;color:gray;font-size:33rpx">
+<text>\n{{draw_msg}}</text>
+</view>
+
+
+<view class="img" style="height:100%">
+<block wx:for="{{imgArr}}" wx:for-item="image">
+<image src="{{image}}" data-src="{{image}}"   bindtap="previewImage" 
+style="width:33%; height:100px">
+</image>
+</block>
+</view>
+
+<button bindtap="shouquan">授权</button>
+
+<view style="text-align:center;color:gray;font-size:30rpx">
+<text>\nCopyright © 2019 GT, All Rights Reserved \nguangtangchen@gmail.com
+</text>
+</view>
+
+
